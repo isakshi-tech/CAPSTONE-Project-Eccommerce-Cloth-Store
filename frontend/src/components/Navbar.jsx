@@ -1,31 +1,74 @@
-import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const Navbar = () => {
-  const [visible, setVisible] = useState(false);
   return (
-    <div className="flex items-center justify-between py-5 font-medium">
-      <img src={assets.logo} className="w-36 " alt="" />
+    <div className="relative flex items-center justify-between py-5 border-b">
+      {/* sidebar menu for small screen */}
+
+      <div className="flex flex-col text-gray-700">
+        <div className="group relative">
+          <img
+            src={assets.menu_icon}
+            className="w-5 cursor-pointer sm:hidden"
+            alt=""
+          />
+          <div className="group-hover:block hidden absolute dropdown-menu left-0 pt-4 ">
+            <div className="flex flex-col gap-2 w-[200px] py-3 px-5 bg-white/80 backdrop-blur-md text-black-500  shadow-md rounded border">
+              <NavLink
+                to="/"
+                className="text-sm font-light   text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200 "
+              >
+                Home
+              </NavLink>
+
+              <NavLink
+                to="/collection"
+                className="text-sm font-light  text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200"
+              >
+                Collection
+              </NavLink>
+
+              <NavLink
+                to="/about"
+                className="text-sm font-light   text-gray-600chover:text-[#6E0F0F] transition-colors duration-200"
+              >
+                About
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className="text-sm font-light  text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200"
+              >
+                Contact
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      </div>
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
-          <p>HOME</p>
+          <p>Home</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/about" className="flex flex-col items-center gap-1">
-          <p>ABOUT</p>
+          <p>About</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/contact" className="flex flex-col items-center gap-1">
-          <p>CONTACT</p>
+          <p>Contact</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
         <NavLink to="/collection" className="flex flex-col items-center gap-1">
-          <p>COLLECTION</p>
+          <p>Collection</p>
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
       </ul>
+      <div className="flex-1 flex justify-center">
+        <img src={assets.logo} className="w-36 mr-10" alt="logo" />
+      </div>
       <div className="flex items-center gap-6">
         <img src={assets.search_icon} className="w-4 cursor-pointer" alt="" />
         <div className="group relative">
@@ -35,10 +78,16 @@ const Navbar = () => {
             alt=""
           />
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4 ">
-            <div className="flex flex-col gap-2 w-[200px] py-3 px-5 bg-slate-100 text-gray-500 rounded">
-              <p className="cursor-pointer hover:text-purple-900">My Profile</p>
-              <p className="cursor-pointer hover:text-purple-900">Orders</p>
-              <p className="cursor-pointer hover:text-purple-900">LogOut</p>
+            <div className="flex flex-col gap-2 w-[200px] py-3 px-5 bg-white text-red-500 rounded">
+              <p className="text-sm font-light text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200">
+                My Profile
+              </p>
+              <p className="text-sm font-light text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200">
+                Orders
+              </p>
+              <p className="text-sm font-light text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200">
+                LogOut
+              </p>
             </div>
           </div>
         </div>
@@ -48,13 +97,10 @@ const Navbar = () => {
             10
           </p>
         </Link>
-        <img
-          onClick={() => setVisible(true)}
-          src={assets.menu_icon}
-          className="w-5 cursor-pointer sm:hidden"
-        />
+
+        {/* sm:hidden → hide when screen ≥ 640px
+        show when screen < 640px */}
       </div>
-      {/* sidebar menu for small screen */}
     </div>
   );
 };

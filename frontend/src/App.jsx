@@ -10,11 +10,15 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import NavbarCategories from "./components/NavbarCategories";
+import Hero from "./components/hero";
 
 const App = () => {
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] ">
       <Navbar />
+      <NavbarCategories />
+      <Hero />
 
       <Routes>
         <Route path="/" element={<Home />} />
