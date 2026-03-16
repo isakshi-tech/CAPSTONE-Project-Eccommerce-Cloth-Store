@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Betania+Patmos+In&display=swap");
 @import "tailwindcss";
 
 a.active hr {
   display: block;
 }
 
-body {
-  font-family: "Inter", sans-serif;
+* {
+  font-family: sans-serif;
+}
+
+.betania-patmos-in-regular {
+  font-family: "Betania Patmos In", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

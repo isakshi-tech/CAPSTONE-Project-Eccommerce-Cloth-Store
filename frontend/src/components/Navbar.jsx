@@ -66,8 +66,12 @@ const Navbar = () => {
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
       </ul>
-      <div className="flex-1 flex justify-center">
-        <img src={assets.logo} className="w-36 mr-10" alt="logo" />
+      <div className="flex-1 flex sm:justify-center">
+        <img
+          className="items-start align-items: flex-start w-36 "
+          src={assets.logo}
+          alt="logo"
+        />
       </div>
       <div className="flex items-center gap-6">
         <img src={assets.search_icon} className="w-4 cursor-pointer" alt="" />
