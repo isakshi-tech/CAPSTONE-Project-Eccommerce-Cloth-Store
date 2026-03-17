@@ -67,11 +67,16 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div className="flex-1 flex sm:justify-center">
-        <img
-          className="items-start align-items: flex-start w-36 "
-          src={assets.logo}
-          alt="logo"
-        />
+        <Link to="/">
+          {/* <img
+            className="items-start align-items: flex-start w-36 "
+            src={assets.logo}
+            alt="logo"
+          /> */}
+          <h1 className="text-2xl   betania-patmos-in-regular font-bold text-[#6E0F0F]">
+            VeloraThreads
+          </h1>
+        </Link>
       </div>
       <div className="flex items-center gap-6">
         <img src={assets.search_icon} className="w-4 cursor-pointer" alt="" />

@@ -2,11 +2,18 @@ import React from "react";
 
 const Title = ({ text1, text2 }) => {
   return (
-    <div className="mb-5 text-center">
-      <div className="betania-patmos-in-regular text-3xl font-bold mb-2">
-        {text1}
+    <div className="flex flex-col items-center mb-1">
+      <div className="flex items-center">
+        <p className="w-8 md:w-11 h-[2px] bg-[#6E0F0F]"></p>
+
+        <span className="px-4 betania-patmos-in-regular text-4xl text-[#6E0F0F]">
+          {text1}
+        </span>
+
+        <p className="w-8 md:w-11 h-[2px] bg-[#6E0F0F]"></p>
       </div>
-      <p className="text-gray-600 text-base">{text2}</p>
+
+      <p className="text-gray-600 font-light text-base">{text2}</p>
     </div>
   );
 };

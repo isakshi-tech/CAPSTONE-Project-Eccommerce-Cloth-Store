@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 my-5 h-[300px] ">
+    <div className="flex flex-col sm:flex-row  ">
       {/* Left side */}
       <div className="relative ">
         <img src={assets.hero2} className="w-full  object-cover" />
@@ -25,7 +25,7 @@ const hero = () => {
       </div>
 
       {/* Right side */}
-      <div className="max-sm:mt-3 sm:ml-0 aspect-[4/5] overflow-hidden ">
+      <div className="max-sm:mt-3 sm:ml-0 overflow-hidden ">
         <img src={assets.hero1} className="w-full object-cover" />
       </div>
     </div>
