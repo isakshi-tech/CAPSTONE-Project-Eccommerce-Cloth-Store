@@ -5,7 +5,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="relative flex items-center justify-between py-5 border-b">
+    <div className="relative flex items-center justify-between py-4 border-b">
       {/* sidebar menu for small screen */}
 
       <div className="flex flex-col text-gray-700">
@@ -68,14 +68,11 @@ const Navbar = () => {
       </ul>
       <div className="flex-1 flex sm:justify-center">
         <Link to="/">
-          {/* <img
+          <img
             className="items-start align-items: flex-start w-36 "
             src={assets.logo}
             alt="logo"
-          /> */}
-          <h1 className="text-2xl   betania-patmos-in-regular font-bold text-[#6E0F0F]">
-            VeloraThreads
-          </h1>
+          />
         </Link>
       </div>
       <div className="flex items-center gap-6">
