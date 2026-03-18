@@ -29,7 +29,7 @@ Wraps the application and provides global state using React Context API. All com
 
 How It Works
 
-The app uses React Context API for state management.
+The app uses React Context API for state management.g
 
 ShopContextProvider wraps the root component (usually in App.jsx).
 
