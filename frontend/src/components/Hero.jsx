@@ -9,7 +9,7 @@ const hero = () => {
       <div className="relative ">
         <img src={assets.hero2} className="w-full  object-cover" />
 
-        <div className="absolute inset-0 flex flex-col justify-center pl-10 text-white">
+        <div className="absolute inset-0 flex flex-col justify-end pl-10 text-[#E1D0B3]">
           <h1 className="text-4xl font-light">Shop Anything</h1>
           <p className="mt-3 max-w-md text-sm">
             We've got styles for cozy cabin moments. No freezing for fashion

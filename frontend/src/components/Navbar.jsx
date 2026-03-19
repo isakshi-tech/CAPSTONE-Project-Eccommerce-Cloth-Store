@@ -6,10 +6,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="relative flex items-center justify-between py-4 border-b">
-      {/* sidebar menu for small screen */}
-
       <div className="flex flex-col text-gray-700">
         <div className="group relative">
+          {/* this is for smaller screens */}
           <img
             src={assets.menu_icon}
             className="w-5 cursor-pointer sm:hidden"
@@ -51,25 +50,28 @@ const Navbar = () => {
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
           <p>Home</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-[#6E0F0F] hidden" />
         </NavLink>
         <NavLink to="/about" className="flex flex-col items-center gap-1">
           <p>About</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-[#6E0F0F] hidden" />
         </NavLink>
         <NavLink to="/contact" className="flex flex-col items-center gap-1">
           <p>Contact</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-[#6E0F0F] hidden" />
         </NavLink>
-        <NavLink to="/collection" className="flex flex-col items-center gap-1">
+        <NavLink
+          to="/collection"
+          className="flex flex-col text-[#6E0F0F] items-center gap-1"
+        >
           <p>Collection</p>
-          <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+          <hr className="w-2/4 border-none h-[1.5px] bg-gray-600 hidden" />
         </NavLink>
       </ul>
       <div className="flex-1 flex sm:justify-center">
         <Link to="/">
           <img
-            className="items-start align-items: flex-start w-36 "
+            className="flex items-start w-36 "
             src={assets.logo}
             alt="logo"
           />

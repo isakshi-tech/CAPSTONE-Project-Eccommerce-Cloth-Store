@@ -1,24 +1,24 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useContext } from "react";
+import { useState, useEffect } from "react";
 import { ShopContext } from "../context/ShopContext";
-import Title from "./Title";
 import ProductItems from "./ProductItems";
+import Title from "./Title";
 
-const NewArrivals = () => {
+const BestSeller = () => {
   const { products } = useContext(ShopContext);
-  const [newArrivals, setNewArrivals] = React.useState([]);
+  const [BestSellers, setBestSellers] = useState([]);
   useEffect(() => {
-    setNewArrivals(products.slice(0, 10));
+    setBestSellers(products.slice(0, 10));
   }, []);
-  console.log(newArrivals);
 
   return (
     <div className="my-10">
       <div>
-        <Title text1={"New Arrivals"} />
+        <Title text1={"Cult Favorites"} />
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
-        {newArrivals.map((product, index) => (
+        {BestSellers.map((product, index) => (
           <ProductItems
             key={index}
             id={product._id}
@@ -32,4 +32,4 @@ const NewArrivals = () => {
   );
 };
 
-export default NewArrivals;
+export default BestSeller;

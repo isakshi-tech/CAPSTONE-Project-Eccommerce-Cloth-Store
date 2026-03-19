@@ -21,16 +21,33 @@ const NavbarCategories = () => {
         
       "
       >
-        <Link className="hover:text-black">New Arrivals</Link>
-        <Link className="hover:text-black">Cult Favorites</Link>
+        <p className="text-[#6E0F0F]">Shop by Category</p>
+        <Link to="/new-arrivals" className="hover:text-[#6E0F0F]">
+          sarees
+        </Link>
+        <Link to="/cult-favorites" className="hover:text-[#6E0F0F]">
+          Tops
+        </Link>
 
-        <Link className="hover:text-black">Pants</Link>
-        <Link className="hover:text-black">Jackets</Link>
+        <Link to="/pants" className="hover:text-[#6E0F0F]">
+          Jeans
+        </Link>
+        <Link to="/jackets" className="hover:text-[#6E0F0F]">
+          Jackets
+        </Link>
 
-        <Link className="hover:text-black">Skirts</Link>
-        <Link className="hover:text-black">Sweaters</Link>
-        <Link className="hover:text-black">gowns</Link>
-        <Link className="hover:text-black">Shoes & Accessories</Link>
+        <Link to="/skirts" className="hover:text-[#6E0F0F]">
+          Skirts
+        </Link>
+        <Link to="/sweaters" className="hover:text-[#6E0F0F]">
+          Sweaters
+        </Link>
+        <Link to="/gowns" className="hover:text-[#6E0F0F]">
+          gowns
+        </Link>
+        <Link to="/shoes" className="hover:text-[#6E0F0F]">
+          Shoes & Accessories
+        </Link>
       </div>
     </div>
   );

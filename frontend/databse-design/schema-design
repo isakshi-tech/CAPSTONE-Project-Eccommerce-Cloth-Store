@@ -1,0 +1,59 @@
+Category {
+  _id: ObjectId,
+
+  name: String,        // "Tops"
+  slug: String,        // "tops"
+
+  subcategories: [
+    {
+      name: String,    // "Crop Tops"
+      slug: String     // "crop-tops"
+    }
+  ],
+
+  filters: [String],   // ["price", "rating", "size","discount"]
+
+  createdAt: Date
+}
+
+Product {
+  _id: ObjectId,
+
+  title: String,
+  slug: String,
+
+  description: String,
+
+  price: {
+    current: Number,
+    original: Number,
+    discount: Number
+  },
+
+  rating: {
+    average: Number,
+    count: Number
+  },
+
+  category: String,
+  subcategory: String,
+
+  attributes: Object,
+
+  images: [
+    {
+      url: String,
+      alt: String
+    }
+  ],
+
+  stock: Number,
+
+  tags: [String],
+
+  isFeatured: Boolean,
+  isActive: Boolean,
+
+  createdAt: Date,
+  updatedAt: Date
+}
