@@ -13,11 +13,11 @@ const NewArrivals = () => {
   console.log(newArrivals);
 
   return (
-    <div className="my-10">
+    <div className="mt-10">
       <div>
-        <Title text1={"New Arrivals"} />
+        <Title text1={"NEW ARRIVALS"} />
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6 mt-1">
         {newArrivals.map((product, index) => (
           <ProductItems
             key={index}

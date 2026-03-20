@@ -51,8 +51,7 @@ Product {
 
   tags: [String],
 
-  isFeatured: Boolean,
-  isActive: Boolean,
+  bestseller:Boolean,
 
   createdAt: Date,
   updatedAt: Date

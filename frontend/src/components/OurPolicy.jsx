@@ -6,7 +6,7 @@ const OurPolicy = () => {
     <div className="flex flex-col sm:flex-row mt-6 justify-around gap-12 sm:gap-2 text-center py-10 text-xs sm:text-sm md:text-base text-gray-700">
       <div>
         <img
-          className="w-12 m-auto mb-5 w-10 h-20"
+          className="w-16 m-auto mb-5 w-10 h-20"
           src={assets.exchange_icon}
           alt=""
         />
