@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top navbar */}
-      <div className="relative flex items-center justify-between h-16 py-4 px-4 sm:px-8 ">
+      <div className="top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 text-white">
         {/* Left - Menu Icon (Mobile Only) */}
         <div className="flex items-center gap-6 flex-1">
           <img
@@ -69,9 +69,12 @@ const Navbar = () => {
             />
             <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-10">
               <div className="flex flex-col gap-2 w-[200px] py-3 px-5 bg-white text-red-500 rounded">
-                <p className="text-sm font-light text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200">
-                  My Profile
-                </p>
+                <Link to="/login">
+                  {" "}
+                  <p className="text-sm font-light text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200">
+                    My Profile
+                  </p>
+                </Link>
                 <p className="text-sm font-light text-gray-600 hover:text-[#6E0F0F] transition-colors duration-200">
                   Orders
                 </p>

@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const hero = () => {
   return (
-    <div className="flex flex-col sm:flex-row mt-3 ">
+    <div className=" flex flex-col  sm:flex-row w-full">
       {/* Left side */}
-      <div className="relative ">
-        <img src={assets.hero2} className="w-full  object-cover" />
+      <div className="relative">
+        <img src={assets.hero2} className="w-full object-cover" />
 
         <div className="absolute inset-0 flex flex-col justify-end pl-10 text-[#E1D0B3]">
           <h1 className="text-4xl climate-crisis-regular font-light">

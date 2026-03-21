@@ -1,6 +1,6 @@
 import React from "react";
 import NewArrivals from "../components/NewArrivals";
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 import BestSeller from "../components/BestSeller";
 import OurPolicy from "../components/OurPolicy";
 
