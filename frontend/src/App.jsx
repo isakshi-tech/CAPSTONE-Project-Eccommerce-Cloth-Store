@@ -10,6 +10,7 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
     px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] "
     >
       <Navbar />
+      <SearchBar />
 
       <Routes>
         <Route path="/" element={<Home />} />

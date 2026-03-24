@@ -298,3 +298,13 @@ const StyledWrapper = styled.div`
 `;
 
 export default Form;
+
+//-----Questions to ask before coding:
+// What states exist?
+// What fields each state needs?
+// How states transition?
+
+// 1. Define all possible states
+// 2. List required fields per state
+// 3. Plan state transitions
+// 4. THEN write code
