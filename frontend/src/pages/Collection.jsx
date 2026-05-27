@@ -261,4 +261,4 @@ export default Collection;
 // the function is executed immediately during the component’s render instead of waiting for a user action.
 // Since it runs without an event, e becomes undefined, which causes an error when trying to access e.target.value. Additionally, because the function is already executed, nothing is left to handle the actual change event,
 // so clicking the checkbox does nothing.
-//  The correct approach is onChange={toggleCategory}, which passes the function reference to React; React then calls it at the right time and automatically provides the event object.
+// The correct approach is onChange={toggleCategory}, which passes the function reference to React; React then calls it at the right time and automatically provides the event object.
